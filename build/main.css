@@ -1,12 +1,24 @@
 .link-decoration {
   text-decoration: none; }
 
+.container .background-image {
+  height: 550px;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  background-size: 1440px 1315px; }
+
 header {
   width: 95%;
   height: 36px;
-  margin: 20px auto 0 auto;
-  border-radius: 3px;
-  background-color: grey; }
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-color: grey;
+  background: -webkit-linear-gradient(to bottom, #737373 0%, #808080 45%, #595959 50%, #666666 71%, #737373 100%);
+  background: -moz-linear-gradient(to bottom, #737373 0%, #808080 45%, #595959 50%, #666666 71%, #737373 100%);
+  background: linear-gradient(to bottom, #737373 0%, #808080 45%, #595959 50%, #666666 71%, #737373 100%); }
   header nav {
     height: 100%; }
     header nav ul {
@@ -15,11 +27,12 @@ header {
       margin: 0;
       padding: 0; }
       header nav ul li:last-child {
+        width: 136px;
         border-right: 0; }
       header nav ul li {
         position: relative;
         display: inline-block;
-        width: 102px;
+        width: 100px;
         height: 100%;
         text-align: center;
         font-size: 14px;
@@ -37,19 +50,20 @@ header {
           header nav ul li a .fa-apple {
             font-size: 20px; }
         header nav ul li input {
-          width: 100px;
+          width: 115px;
           height: 16px;
           font-size: 16px;
-          border: 0 none;
+          border: 1px solid #737373;
+          border-radius: 10px;
+          box-shadow: 0px -1px 5px 1px #333333;
           padding: 2px 20px;
-          margin-left: 8px;
-          color: #fff; }
+          background-color: transparent; }
         header nav ul li .fa-search {
           position: absolute;
           top: 5%;
           left: 11%;
           line-height: 16px;
-          color: black;
+          color: white;
           font-size: 12px; }
 
 *,
