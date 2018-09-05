@@ -1,10 +1,40 @@
 .link-decoration {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #08c; }
 
-.container .background-image {
-  height: 550px;
-  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
-  background-size: 1440px 1315px; }
+.container {
+  width: 100%;
+  padding: 0; }
+  .container .background-image {
+    height: 550px;
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+    background-size: 1440px 1315px; }
+  .container .content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    text-align: center;
+    color: white; }
+    .container .content h1 {
+      font-size: 60px;
+      font-weight: 100;
+      margin-bottom: 10px; }
+    .container .content h2 {
+      font-size: 30px;
+      font-weight: 300;
+      margin-top: 0; }
+    .container .content h3 {
+      font-size: 24px;
+      font-weight: 300;
+      margin-top: 40px; }
+  .container .row {
+    margin: auto;
+    width: 100%; }
+    .container .row .image {
+      padding: 0; }
+      .container .row .image img {
+        width: 256px; }
 
 header {
   width: 95%;
@@ -27,7 +57,7 @@ header {
       margin: 0;
       padding: 0; }
       header nav ul li:last-child {
-        width: 136px;
+        width: 130px;
         border-right: 0; }
       header nav ul li {
         position: relative;
@@ -55,12 +85,16 @@ header {
           font-size: 16px;
           border: 1px solid #737373;
           border-radius: 10px;
-          box-shadow: 0px -1px 5px 1px #333333;
+          box-shadow: 0px -1px 1px 1px #333333;
           padding: 2px 20px;
           background-color: transparent; }
+        header nav ul li input:active,
+        header nav ul li input:focus {
+          outline: none;
+          caret-color: white; }
         header nav ul li .fa-search {
           position: absolute;
-          top: 5%;
+          top: 4%;
           left: 11%;
           line-height: 16px;
           color: white;
