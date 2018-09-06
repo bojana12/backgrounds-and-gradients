@@ -12,7 +12,6 @@ header {
   background:    -moz-linear-gradient(to bottom, #737373 0%, #808080 45%, #595959 50%, #666666 71%, #737373 100%);
   background:            linear-gradient(to bottom, #737373 0%, #808080 45%, #595959 50%, #666666 71%, #737373 100%);
 
-
   nav {
     height: 100%;
 
@@ -25,6 +24,10 @@ header {
       li:last-child {
         width: 130px;
         border-right: 0;
+
+        @media screen and (min-width: 1440px) {
+           width: 210px;
+        }
       }
 
       li {
@@ -37,6 +40,18 @@ header {
         border-right: 1px solid #4b4c4c;
         list-style-type: none;
         color: white;
+
+        @media screen and (min-width: 768px) {
+          width: 70px;
+        }
+
+        @media screen and (min-width: 1024px) {
+          width: 100px;
+        }
+
+        @media screen and (min-width: 1440px) {
+          width: 140px;
+        }
       
         a {
           display: block;
@@ -50,6 +65,18 @@ header {
           .fa-apple {
             font-size: 20px;
           }
+
+          @media screen and (min-width: 768px) {
+            width: 70px;
+          }
+
+          @media screen and (min-width: 1024px) {
+            width: 100px;
+          }
+
+          @media screen and (min-width: 1440px) {
+            width: 140px;
+          }
         }
         
         input {
@@ -61,6 +88,10 @@ header {
           box-shadow: 0px -1px 1px 1px #333333;
           padding: 2px 20px;
           background-color: transparent;
+
+          @media screen and (min-width: 1440px) {
+            width: 180px;
+          }
         }
 
         input:active,

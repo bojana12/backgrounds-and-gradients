@@ -48,10 +48,9 @@
     .container .row .image {
       padding: 0; }
       .container .row .image img {
-        width: 256px; }
+        width: 100%; }
         @media screen and (min-width: 1440px) {
           .container .row .image img {
-            width: 360px;
             height: 250px; } }
 
 header {
@@ -77,6 +76,9 @@ header {
       header nav ul li:last-child {
         width: 130px;
         border-right: 0; }
+        @media screen and (min-width: 1440px) {
+          header nav ul li:last-child {
+            width: 210px; } }
       header nav ul li {
         position: relative;
         display: inline-block;
@@ -87,6 +89,15 @@ header {
         border-right: 1px solid #4b4c4c;
         list-style-type: none;
         color: white; }
+        @media screen and (min-width: 768px) {
+          header nav ul li {
+            width: 70px; } }
+        @media screen and (min-width: 1024px) {
+          header nav ul li {
+            width: 100px; } }
+        @media screen and (min-width: 1440px) {
+          header nav ul li {
+            width: 140px; } }
         header nav ul li a {
           display: block;
           width: 100%;
@@ -97,6 +108,15 @@ header {
           color: white; }
           header nav ul li a .fa-apple {
             font-size: 20px; }
+          @media screen and (min-width: 768px) {
+            header nav ul li a {
+              width: 70px; } }
+          @media screen and (min-width: 1024px) {
+            header nav ul li a {
+              width: 100px; } }
+          @media screen and (min-width: 1440px) {
+            header nav ul li a {
+              width: 140px; } }
         header nav ul li input {
           width: 115px;
           height: 16px;
@@ -106,6 +126,9 @@ header {
           box-shadow: 0px -1px 1px 1px #333333;
           padding: 2px 20px;
           background-color: transparent; }
+          @media screen and (min-width: 1440px) {
+            header nav ul li input {
+              width: 180px; } }
         header nav ul li input:active,
         header nav ul li input:focus {
           outline: none;

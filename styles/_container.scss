@@ -43,10 +43,9 @@
       padding: 0;
 
       img {
-        width: 256px;
+        width: 100%;
 
         @media screen and (min-width: 1440px) {
-          width: 360px;
           height: 250px;
         }
       }
