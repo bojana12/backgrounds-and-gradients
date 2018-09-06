@@ -44,6 +44,11 @@
 
       img {
         width: 256px;
+
+        @media screen and (min-width: 1440px) {
+          width: 360px;
+          height: 250px;
+        }
       }
     }
   }
